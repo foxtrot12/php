@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Frontend Task 1</title>
+	<br><h1>&nbspTVS Apache RTR 200 4V</h1>
+	<hr><br>
+	<div class="banner">
+		&nbsp<a class="a" href="index.html">Overview</a>
+		&nbsp<a class="a" href="comments.html">Comments</a>
+		&nbsp<a class="a" href="map.html">Map</a>
+	</div>
+	<hr><br>
+
+	<link rel="stylesheet"media="all" href="mobile.css" />
+	<link rel="stylesheet"media="only screen and (min-device-width: 720px)" href="desktop.css" />
+		
+  	<style>
+      	.blue{background: #0192FF;}
+       	.orange{background: #FFB51E;};
+     	
+    </style>
+
+
+
+</head>
+<body>
+
+<div class="slider">
+	<input type="radio" name="slide_switch" id="id1"/>
+	<label for="id1">
+		<img src="assets/bike1.jpg" width="50"/>
+	</label>
+	<img src="assets/bike1.jpg"/>
+	
+	<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+	<label for="id2">
+		<img src="assets/bike2.jpg" width="50"/>
+	</label>
+	<img src="assets/bike2.jpg"/>
+	
+	<input type="radio" name="slide_switch" id="id3"/>
+	<label for="id3">
+		<img src="assets/bike3.jpg" width="50"/>
+	</label>
+	<img src="assets/bike3.jpg"/>
+	
+	<input type="radio" name="slide_switch" id="id4"/>
+	<label for="id4">
+		<img src="assets/bike4.jpg" width="50"/>
+	</label>
+	<img src="assets/bike4.jpg"/>
+	
+	<input type="radio" name="slide_switch" id="id5"/>
+	<label for="id5">
+		<img src="assets/bike5.jpg" width="50"/>
+	</label>
+	<img src="assets/bike5.jpg"/>
+
+	<input type="radio" name="slide_switch" id="id6"/>
+	<label for="id6">
+		<img src="assets/bike6.jpg" width="50"/>
+	</label>
+	<img src="assets/bike6.jpg"/>
+</div>
+
+
+<div class="para1">
+	<font color="#7F7F7F"><img src="assets/icon1.png" height="15"> Key Specs : <img src="assets/icon2.png" height="15"> 197.5 cc || <img src="assets/icon3.png" height="15"> 20.7 bhp || <img src="assets/icon4.png" height="15"> 41 kmpl || <img src="assets/icon5.png" height="15">  148 kg </font>
+
+	<br><br>
+	<h2>Ratings</h2>
+	<br>
+	<script type = "text/javascript">
+         	// enter critics rating (out of 10 stars) in rat1 
+         	// enter safety rating (out of 10 stars) in rat1 
+         	// enter reliability rating (out of 10 stars) in rat1
+            var n,rat1=7,rat2=8,rat3=9,rato;
+            rato=(rat1+rat2+rat3)/3;         // overall rating is the average of all 3 ratings 
+
+         	document.write("Critic's Rating <br/>" );
+            for(n = 0; n<rat1; n++) 
+            {
+               document.write("<span class='blue'>★</span>" );
+               
+            } 
+            document.write("<br/>Safety<br/>" );       
+            for(n = 0; n<rat2; n++) 
+            {
+               document.write("<span class='blue'>★</span>" );
+               
+            }
+            document.write("<br/>Reliability<br/>" );
+            for(n = 0; n<rat3; n++) 
+            {
+               document.write("<span class='blue'>★</span>" );
+               
+            }
+            document.write("<br/>Overall Rating<br/>" );
+            for(n = 0; n<rato; n++) 
+            {
+               document.write("<span class='orange'>★</span>" );
+               
+            }
+	</script> 
+	
+	<br><br>
+	<button class="btn button">Check On Road Price</button>
+	<br><br>
+	<h3>Your Rating</h3>
+	<form class="rating">
+  <label>
+    <input type="radio" name="stars" value="1" />
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="2" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="3" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>   
+  </label>
+  <label>
+    <input type="radio" name="stars" value="4" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="5" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+</form>
+	
+</div>
+
+
+
+   
+</body>
+</html>
